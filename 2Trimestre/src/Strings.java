@@ -31,6 +31,42 @@ public class Strings {
         System.out.println(hola1.substring(0,espacio));
         System.out.println(hola1.substring(espacio+1));
 
+
+        //equals
+        System.out.println("\n\n ");
+        String cadena1 = "J";
+        String cadena2 = "H";
+        System.out.println(cadena1.equalsIgnoreCase(cadena2));
+        System.out.println(cadena1.compareTo(cadena2));
+        int h = (int) 'H';
+        int h2 = (int) 'I';
+        System.out.println(h + " " + h2);
+
+
+        //Trim
+        String trim1 = " 6766886        ";
+        System.out.println(trim1.trim());
+
+
+        //Replace
+        String replace = "Hola como estás";
+        System.out.println(replace.replace(' ', ','));
+
+        //lower upper case
+        String caso = "HOLA";
+        System.out.println(caso.toLowerCase(Locale.ROOT));
+
+        // strings a Numeros
+        String s = "" + 2;
+        String s1 = Integer.toString(2);
+        String s3 = Double.toString(3.3333);
+        String s4 = String.valueOf(50);
+        String s5;
+
+
+        // parsear
+        String pars = "1029.1212";
+        
     }
 
 }
