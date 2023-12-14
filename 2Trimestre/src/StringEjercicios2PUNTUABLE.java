@@ -104,8 +104,9 @@ public class StringEjercicios2PUNTUABLE {
         //18
         System.out.println("\n Ejercicio 18");
         System.out.print("Introduce un número de dos cifras: ");
-        int ej18 = scan1.nextInt();
-        System.out.println((char)ej18);
+        String ej18 = scan1.nextLine();
+        int num = Integer.parseInt(ej18);
+        System.out.println((char)num);
 
         //19
         System.out.println("\n Ejercicio 19");
