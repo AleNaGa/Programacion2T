@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class ZZPruebas {
     public static void main (String [] args){
-        System.out.println("HolaMundo1");
+        Scanner scan = new Scanner(System.in);
 
     }
 }
