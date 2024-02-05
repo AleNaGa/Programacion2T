@@ -80,4 +80,44 @@ public class MetodosGuardados {
             System.out.println("--------------------------------------");
         }
     }
+    public static int [] rellenarArrayRandom (){
+        int tamaño = aleatorio(5,15);
+        int [] array = new int[tamaño];
+        for (int i = 0; i < tamaño; i++) {
+            array[i] = aleatorio(1,9);
+        }
+        return array;
+    }
+    public static int aleatorio (int max, int min){
+        return (int) (Math.random() * ((max-min) + 1) + min);
+    }
+    public static int [] anadirValor (int [] array, int entero, int posicion){
+        int [] nuevoArray = new int[array.length + 1];
+        int contador = 0;
+        for (int i = 0; i < array.length + 1; i++) {
+            if(i == posicion){
+                nuevoArray[i] = entero;
+            }
+            else{
+                nuevoArray[i] = array[contador];
+                contador++;
+            }
+        }
+        return nuevoArray;
+    }
+    public static boolean comprobacion (int numero, int limite){
+        if (numero < limite)return true;
+        else return false;
+    }
+    public static void intercambiarValoresArray(int[] arrayPrimero, int[] arraySegundo, int entero, int posicion1, int posicion2) {
+        System.out.println(entero);
+        System.out.println(posicion1);
+        System.out.println(posicion2);
+        if (comprobacion(entero, arrayPrimero.length) && comprobacion(entero, arraySegundo.length) && comprobacion(posicion1 + entero, arrayPrimero.length) && comprobacion(posicion2 + entero, arraySegundo.length)) {
+            for (int i = 0; i < entero; i++) {
+                arrayPrimero[posicion1 +i ] = arraySegundo[posicion2 + i];
+
+            }
+        } else System.out.println("se ha salido del limite");
+    }
 }
