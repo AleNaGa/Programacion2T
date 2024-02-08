@@ -120,4 +120,19 @@ public class MetodosGuardados {
             }
         } else System.out.println("se ha salido del limite");
     }
+
+    public static int[] sumarArrays(int[] array1, int[] array2) {
+        int[] arraySumado = new int[Math.max(array1.length, array2.length)];
+
+        for (int i = 0, j = 0; i < arraySumado.length; i++) {
+            if (i < Math.min(array1.length, array2.length)) {
+                arraySumado[i] = array1[i] + array2[i];
+            } else if (array1.length > array2.length) {
+                arraySumado[i] = array1[i];
+            } else {
+                arraySumado[i] = array2[i];
+            }
+        }
+        return arraySumado;
+    }
 }
