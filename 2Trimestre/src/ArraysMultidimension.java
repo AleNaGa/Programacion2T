@@ -11,12 +11,10 @@ public class ArraysMultidimension {
         // pasar a mayúsculas el contenido de la matriz. En caso de ser “minusculas”,
         // pasar a minúsculas el contenido de la matriz. En cualquier otro caso, no hacer nada.
         // A continuación, imprimir la matriz.
-
+*/
         System.out.println("\n ejercicio 1");
-        String[][] nombres = {
-                {"Vargas", "MAnuel", "Bojita", "Adan"},
-                {"Julian", "Carlos", "Juan", "David"},
-        };
+        String[][] nombres =
+                {{"Vargas", "MAnuel", "Bojita", "Adan"}, {"Julian", "Carlos", "Juan", "David"},};
         int alto;
         int ancho;
         String nombre = "";
@@ -52,7 +50,7 @@ public class ArraysMultidimension {
         }
         System.out.println(" ");
     }
-*/
+
         /*
         1. Leer por teclado un entero y crear una matriz cuadrada (mismo numero de filas que de columnas). Dependiendo
          del tamaño tendrá esta forma:
